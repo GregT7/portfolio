@@ -13,7 +13,8 @@
       <h1>Gregory Terrell</h1>
       <p class="lede">Associate Software Engineer · Irving, Texas</p>
       <p class="links">
-        <a href="mailto:gregterrelga@gmail.com">gregterrelga@gmail.com</a>
+        <span>gregterrelga@gmail.com</span>
+        <a href="assets/Gregory-Terrell-Resume.pdf">Resume</a>
         <a href="https://github.com/GregT7">GitHub</a>
         <a href="https://linkedin.com/in/gregterrell7">LinkedIn</a>
       </p>
@@ -25,15 +26,12 @@
         <h3>Associate Software Engineer, Clinical Systems (Lab Ops)</h3>
         <p class="meta">Caris Life Sciences · December 2025 – Present</p>
         <ul>
-          <li>Designed and wrote a large share of the Spring Boot APIs on the Caris Detect microservice, from inception through commercial launch.</li>
-          <li>Adapted a forked Spring Boot microservice into ChromoSeq’s case platform for a new lab product.</li>
-          <li>Built S3 document APIs and MySQL tables so pathologists and clinicians can review the documents needed to advance a case.</li>
-          <li>Debugged production failures with Lens and Kubernetes logs so dependent services recovered quickly.</li>
-          <li>Tightened Okta access so each service only had the permissions it needed.</li>
-          <li>Updated Helm ingress to whitelist API routes for Salesforce, so test orders and case status could move between Salesforce and the lab.</li>
-          <li>Added SendGrid emails on failures so the team could fix issues before they spread.</li>
-          <li>Ran a team session on coding practices and shipped a shared Cursor skill so new changes followed the same rules.</li>
-          <li>Used a Cursor skill and a database MCP to generate and run Postman tests while building APIs, which shortened the path to production and caught more bugs earlier.</li>
+          <li>Designed and built 50 of 81 production Spring Boot APIs (62%) for the Caris Detect backend, the core service handling database access and data processing for the surrounding microservices and UIs, from inception through commercial launch.</li>
+          <li>Designed and built 45 of 62 production APIs (73%) for the ChromoSeq backend, covering case tracking, documents, and the report sign-off pathologists use to release patient results.</li>
+          <li>Owned production database changes and releases for the Caris Detect backend in a regulated clinical environment: executed 86 DB scripts across 13 releases, deployed builds and a hotfix, and managed prod schema drift.</li>
+          <li>Built a pre-release validation workflow that snapshots the prod schema into a clean local SQL Server, replays release DB scripts to catch errors, and runs the Spring Boot regression suite against the result, supplemented by AI-assisted (Cursor + DB MCP) script review.</li>
+          <li>Diagnosed and fixed a critical outage within 15 minutes of deployment: mismatched table collations broke the case-creation API and blocked all new cases from the UI.</li>
+          <li>Represented the Caris Detect backend team in cross-team meetings for a month during the manager's absence, reporting delivery status and taking on requests from partner teams building UIs and microservices against our APIs.</li>
         </ul>
       </article>
     </section>
@@ -41,22 +39,33 @@
     <section>
       <h2>Projects</h2>
       <article class="project">
+        <h3>NetraPi</h3>
+        <p class="meta">January 2026 – October 2026</p>
+        <ul class="badges">
+          <li>OpenCV</li>
+          <li>TensorFlow Lite</li>
+          <li>SQLite</li>
+          <li>FastAPI</li>
+          <li>React</li>
+          <li>TypeScript</li>
+          <li>Tailwind</li>
+          <li>AWS S3</li>
+        </ul>
+        <img src="assets/netrapi-overview.gif" alt="NetraPi dash cam detecting unsafe driving near a stop sign">
+        <p>Raspberry Pi 5 dash cam with an Arducam, Coral USB TPU, GPIO buzzer, portable battery, and 3D-printed windshield mount. It detects unsafe driving near stop signs.</p>
+        <p class="links">
+          <a href="https://netrapi.vercel.app">Live site</a>
+          <a href="https://github.com/GregT7/NetraPi">GitHub</a>
+        </p>
+      </article>
+
+      <article class="project">
         <h3>PlanGauge</h3>
         <p class="meta">January 2025 – October 2025</p>
         <p>Full-stack planner built with React, Flask, Docker, Supabase, PostgreSQL, and a Notion API integration.</p>
         <p class="links">
           <a href="https://plan-gauge.vercel.app">Live site</a>
           <a href="https://github.com/GregT7/PlanGauge">GitHub</a>
-        </p>
-      </article>
-
-      <article class="project">
-        <h3>NetraPi</h3>
-        <p class="meta">January 2026 – October 2026</p>
-        <p>Raspberry Pi 5 dash cam that detects unsafe driving near stop signs, with a public site for the project.</p>
-        <p class="links">
-          <a href="https://netrapi.vercel.app">Live site</a>
-          <a href="https://github.com/GregT7/NetraPi">GitHub</a>
         </p>
       </article>
 
