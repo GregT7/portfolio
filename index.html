@@ -20,6 +20,14 @@
       </p>
     </header>
 
+    <section class="about">
+      <h2>About</h2>
+      <div class="about-row">
+        <img src="assets/Professional_Headshot.jpg" alt="Gregory Terrell">
+        <p>I'm a backend engineer who builds systems that save time and reduce cost. I'm interested in AI-driven development, machine learning, cloud infrastructure, and products that generate revenue.</p>
+      </div>
+    </section>
+
     <section>
       <h2>Work</h2>
       <article>
@@ -27,11 +35,7 @@
         <p class="meta">Caris Life Sciences · December 2025 – Present</p>
         <ul>
           <li>Designed and built 50 of 81 production Spring Boot APIs (62%) for the Caris Detect backend, the core service handling database access and data processing for the surrounding microservices and UIs, from inception through commercial launch.</li>
-          <li>Designed and built 45 of 62 production APIs (73%) for the ChromoSeq backend, covering case tracking, documents, and the report sign-off pathologists use to release patient results.</li>
-          <li>Owned production database changes and releases for the Caris Detect backend in a regulated clinical environment: executed 86 DB scripts across 13 releases, deployed builds and a hotfix, and managed prod schema drift.</li>
-          <li>Built a pre-release validation workflow that snapshots the prod schema into a clean local SQL Server, replays release DB scripts to catch errors, and runs the Spring Boot regression suite against the result, supplemented by AI-assisted (Cursor + DB MCP) script review.</li>
           <li>Diagnosed and fixed a critical outage within 15 minutes of deployment: mismatched table collations broke the case-creation API and blocked all new cases from the UI.</li>
-          <li>Represented the Caris Detect backend team in cross-team meetings for a month during the manager's absence, reporting delivery status and taking on requests from partner teams building UIs and microservices against our APIs.</li>
         </ul>
       </article>
     </section>
@@ -42,17 +46,27 @@
         <h3>NetraPi</h3>
         <p class="meta">January 2026 – October 2026</p>
         <ul class="badges">
+          <li>Raspberry Pi</li>
+          <li>Python</li>
           <li>OpenCV</li>
           <li>TensorFlow Lite</li>
           <li>SQLite</li>
+          <li>SQLAlchemy</li>
+          <li>Postgres</li>
+          <li>Supabase</li>
           <li>FastAPI</li>
           <li>React</li>
           <li>TypeScript</li>
           <li>Tailwind</li>
+          <li>Docker</li>
           <li>AWS S3</li>
+          <li>Vercel</li>
+          <li>Render</li>
+          <li>GitHub Actions</li>
+          <li>Cursor</li>
         </ul>
-        <img src="assets/netrapi-overview.gif" alt="NetraPi dash cam detecting unsafe driving near a stop sign">
-        <p>Raspberry Pi 5 dash cam with an Arducam, Coral USB TPU, GPIO buzzer, portable battery, and 3D-printed windshield mount. It detects unsafe driving near stop signs.</p>
+        <img src="assets/netrapi-overview.gif" alt="NetraPi dash cam giving audio feedback for an unsafe stop">
+        <p>A smart dash cam that plays a real-time audio cue when it detects an incomplete stop at a stop sign. The cue is a reminder in the moment, with the aim that drivers learn to come to a complete stop over time. It reached 83.3% accuracy on 102 training clips, and 61% on 41 real-world clips filtered to those most like the training set.</p>
         <p class="links">
           <a href="https://netrapi.vercel.app">Live site</a>
           <a href="https://github.com/GregT7/NetraPi">GitHub</a>

@@ -70,6 +70,26 @@ header .links {
   margin-top: 1rem;
 }
 
+.about-row {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+}
+
+.about-row img {
+  width: 8rem;
+  height: 10.1rem;
+  flex-shrink: 0;
+  object-fit: cover;
+  object-position: center 22%;
+  border: 1px solid var(--line);
+  border-radius: 0.7rem;
+}
+
+.about-row p {
+  margin: 0;
+}
+
 .meta {
   margin-top: 0.3rem;
   color: var(--muted);
@@ -183,6 +203,15 @@ a:hover {
 
   h1 {
     font-size: 2rem;
+  }
+
+  .about-row {
+    align-items: flex-start;
+  }
+
+  .about-row img {
+    width: 6.4rem;
+    height: 8.1rem;
   }
 
   .skills li {
